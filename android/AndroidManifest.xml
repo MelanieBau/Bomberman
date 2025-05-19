@@ -5,14 +5,14 @@
   <application
       android:allowBackup="true"
       android:fullBackupContent="true"
-      android:icon="@drawable/ic_launcher"
+      android:icon="@mipmap/ic_launcher"
       android:isGame="true"
       android:appCategory="game"
       android:label="@string/app_name"
       tools:ignore="UnusedAttribute"
       android:theme="@style/GdxTheme">
     <activity
-        android:name="com.mygdx.puigbros.android.AndroidLauncher"
+        android:name="com.mygdx.bomberman.android.AndroidLauncher"
         android:label="@string/app_name"
         android:screenOrientation="landscape"
         android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|screenLayout"

@@ -6,7 +6,7 @@
       width: 400
       height: 120
       action: Resume
-      "text": "Continua"
+      "text": "Salir"
       "image_on": "gui/Button-on.png"
       "image_off": "gui/Button-off.png"
     },
@@ -16,7 +16,7 @@
       width: 400
       height: 120
       action: Quit
-      "text": "Surt"
+      "text": "Continuar"
       "image_on": "gui/Button-on.png"
       "image_off": "gui/Button-off.png"
     }

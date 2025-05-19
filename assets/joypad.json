@@ -1,40 +1,58 @@
 {
-  "buttons" : [
+  "buttons": [
     {
-      x: 700
-      y: 40
-      width: 80
-      height: 80,
-      action: Pause
-      image_on: "gui/Pause-on.png",
-      image_off: "gui/Pause-off.png"
+      "x": 720,
+      "y": 40,
+      "width": 50,
+      "height": 50,
+      "action": "Pause",
+      "image_on": "gui/Pause-on.png",
+      "image_off": "gui/Pause-off.png"
     },
     {
-      x: 40
-      y: 360
-      width: 80
-      height: 80,
-      action: Left
-      image_on: "gui/Left-on.png",
-      image_off: "gui/Left-off.png"
+      "x": 10,
+      "y": 60,
+      "width": 50,
+      "height": 50,
+      "action": "Left",
+      "image_on": "gui/Left-on.png",
+      "image_off": "gui/Left-off.png"
     },
     {
-      x: 160
-      y: 360
-      width: 80
-      height: 80
-      action: Right
-      image_on: "gui/Right-on.png",
-      image_off: "gui/Right-off.png"
+      "x": 80,
+      "y": 60,
+      "width": 50,
+      "height": 50,
+      "action": "Right",
+      "image_on": "gui/Right-on.png",
+      "image_off": "gui/Right-off.png"
     },
     {
-      x: 660
-      y: 360
-      width: 80
-      height: 80
-      action: Jump
-      image_on: "gui/Jump-on.png",
-      image_off: "gui/Jump-off.png"
+      "x": 45,
+      "y": 5,
+      "width": 50,
+      "height": 50,
+      "action": "Up",
+      "image_on": "gui/Up-on.png",
+      "image_off": "gui/Up-off.png"
+    },
+    {
+      "x": 45,
+      "y": 95,
+      "width": 50,
+      "height": 50,
+      "action": "Down",
+      "image_on": "gui/Down-on.png",
+      "image_off": "gui/Down-off.png"
+    },
+    {
+      "x": 45,
+      "y": 45,
+      "width": 50,
+      "height": 50,
+      "action": "Bomba",
+      "image_on": "gui/B_1.png",
+      "image_off": "gui/B_0.png"
     }
   ]
 }

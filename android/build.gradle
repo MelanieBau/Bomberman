@@ -9,7 +9,7 @@ apply plugin: 'com.android.application'
 
 
 android {
-  namespace "com.mygdx.puigbros"
+  namespace "com.mygdx.bomberman"
   compileSdk 34
   sourceSets {
     main {
@@ -31,7 +31,7 @@ android {
 		}
   }
   defaultConfig {
-    applicationId 'com.mygdx.puigbros'
+    applicationId 'com.mygdx.bomberman'
     minSdkVersion 19
     targetSdkVersion 34
     versionCode 1
@@ -124,7 +124,7 @@ tasks.register('run', Exec) {
   }
 
   def adb = path + "/platform-tools/adb"
-  commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.mygdx.puigbros/com.mygdx.puigbros.android.AndroidLauncher'
+  commandLine "$adb", 'shell', 'am', 'start', '-n', 'com.mygdx.bomberman/com.mygdx.bomberman.android.AndroidLauncher'
 }
 
 eclipse.project.name = appName + "-android"

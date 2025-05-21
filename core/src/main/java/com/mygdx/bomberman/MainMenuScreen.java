@@ -39,10 +39,10 @@ public class MainMenuScreen implements Screen {
         float titleX = (800 - layout.width) / 2f;
         game.bigFont.draw(game.textBatch, layout, titleX, 420);
 
-        //
+
         layout.setText(game.smallFont, "Puig Castellar 2025");
         float footerX = (800 - layout.width) / 2f;
-        game.smallFont.draw(game.textBatch, layout, footerX, 60); // Altura baja
+        game.smallFont.draw(game.textBatch, layout, footerX, 60);
 
         game.textBatch.end();
 

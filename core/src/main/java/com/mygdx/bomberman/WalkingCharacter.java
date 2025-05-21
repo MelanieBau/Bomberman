@@ -26,10 +26,13 @@ public class WalkingCharacter extends GameEntity {
         shapes.end();
     }
 
+    //Cambia el valor a true si esta muerto
     public void kill() {
         dead = true;
     }
 
+
+    //Método que devuelve el estado actual de dead. Sirve para comprobar si el personaje está muerto
     public boolean isDead() {
         return dead;
     }

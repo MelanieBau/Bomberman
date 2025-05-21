@@ -31,7 +31,7 @@ public class Bomba extends GameEntity {
         Timer.schedule(new Timer.Task() {
             @Override
             public void run() {
-                explode();// Ejecutamos la explosión
+                explode();// Ejecutamos la explosión de la bomba
             }
         }, 2.5f);
     }
@@ -77,7 +77,7 @@ public class Bomba extends GameEntity {
         // Abajo
         addExplosionAt(centerX, centerY - TileMap.TILE_SIZE, "explosion/explosion_vertical.png");
 
-        remove(); // eliminar la bomba luego
+        remove(); // Eliminar la bomba luego
     }
 
     private void addExplosionAt(float x, float y, String texturePath) {
@@ -89,7 +89,7 @@ public class Bomba extends GameEntity {
             System.out.println("WARNING: Texture not loaded -> " + texturePath);
         }
 
-        // Si hay un tile destructible, lo borramos del mapa
+        // Si hay un tile destructible, se borrará del mapa
         int tileX = (int) (x / TileMap.TILE_SIZE);
         int tileY = (int) (y / TileMap.TILE_SIZE);
         if (map != null && map.tiles != null) {

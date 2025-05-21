@@ -202,7 +202,7 @@ public class ButtonLayout implements InputProcessor {
             }
         }
 
-        return true; // return true to indicate the event was handled
+        return true;
     }
 
     @Override

@@ -20,12 +20,12 @@ public class Player extends WalkingCharacter {
 
     boolean deathAnimFinished = false;
 
+    //Variables para gestionar el movimiento por casillas, velocidad, dirección, estado de muerte y animaciones.
     int targetTileX, targetTileY;
     boolean moving = false;
     boolean dying = false;
     float moveSpeed = 200f;
     float invulnerability = 0f;
-
     String lastDirection = "Down";
 
     public Player(AssetManager manager) {
@@ -72,6 +72,10 @@ public class Player extends WalkingCharacter {
         return (int)(getY() / TileMap.TILE_SIZE);
     }
 
+
+    //Si está muerto, solo actualiza el stateTime para avanzar la animación de muerte
+    //Si se mueve Calcula la distancia hacia la casilla objetivo
+    //Actualiza la animación dependiendo de la dirección del personaje
     @Override
     public void act(float delta) {
         super.act(delta);
@@ -144,6 +148,9 @@ public class Player extends WalkingCharacter {
         }
     }
 
+
+    //Si el muñeco esta muerte, dibuja las animaciones de muerte
+    //Si está vivo y visible, dibuja el currentFrame en su posición
     @Override
     public void draw(Batch batch, float parentAlpha) {
         super.draw(batch, parentAlpha);
@@ -164,6 +171,8 @@ public class Player extends WalkingCharacter {
         batch.draw(currentFrame, getX() - map.scrollX, getY(), getWidth(), getHeight());
     }
 
+
+    //Marca al jugador como muerto y reinicia el temporizador de animación
     @Override
     public void kill() {
         if (!dead) {
@@ -187,6 +196,8 @@ public class Player extends WalkingCharacter {
         shapes.end();
     }
 
+    //Calcula la posición en casillas del jugador
+    //Comprueba si ya hay una bomba en esa casilla recorriendola y si no hay, crea una nueva
     public void placeBomb() {
         int tileX = getTileX();
         int tileY = getTileY();
@@ -205,6 +216,8 @@ public class Player extends WalkingCharacter {
         getStage().addActor(b);
     }
 
+
+    //Esto indica si la animación de muerte ya terminó(para que reinicie el juego)
     public boolean isDeathAnimationFinished() {
         return deathAnimFinished;
     }

@@ -19,7 +19,6 @@ public class LevelCompleteScreen implements Screen {
 
         game.manager.get("sound/levelcomplete.wav", Sound.class).play();
 
-        // Baja el botón "Menu" desde el código (opcional, si no lo haces desde JSON)
         endMenu.moveButton("Menu", 0, -50);  // Mueve el botón 50px hacia abajo
     }
 

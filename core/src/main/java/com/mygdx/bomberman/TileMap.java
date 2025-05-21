@@ -11,9 +11,9 @@ public class TileMap {
 
     public static final int TILE_SIZE = 64;
     public static final int DESTRUCTIBLE_TILE_ID = 6;
-    int width;
+    int width; //Dimensiones del mapa
     int height;
-    byte tiles[][];
+    byte tiles[][]; // Matriz de Tiles
     AssetManager manager;
     SpriteBatch batch;
 
@@ -62,6 +62,8 @@ public class TileMap {
 
         batch.begin();
 
+
+        //Dibuja el fondo de mi pantalla
         Texture bgTexture = manager.get("bomberman.png", Texture.class);
 
         // scroll
@@ -83,6 +85,8 @@ public class TileMap {
         batch.end();
     }
 
+
+    //Devuelve true si el tile en esa posición es sólido, es decir, no se puede atravesar
     boolean isSolid(int x, int y) {
         int mapX = x / TILE_SIZE;
         int mapY = y / TILE_SIZE;
@@ -136,11 +140,14 @@ public class TileMap {
     }
 
 
+    //Devuelve true si el personaje puede caminar sobre ese tile
     public boolean isWalkable(int tileX, int tileY) {
         if (tileX < 0 || tileY < 0 || tileX >= width || tileY >= height) return false;
         return tiles[tileY][tileX] == 0; // 0 = camino libre
     }
 
+
+    //Destruye un tile si está dentro del mapa y es destructible
     public void destroyTile(int tileX, int tileY) {
         if (tileX >= 0 && tileX < width && tileY >= 0 && tileY < height) {
             if (tiles[tileY][tileX] == DESTRUCTIBLE_TILE_ID) {

@@ -1,55 +1,55 @@
 {
   "buttons": [
     {
-      "x": 720,
-      "y": 40,
-      "width": 50,
-      "height": 50,
+      "x": 730,
+      "y": 400,
+      "width": 60,
+      "height": 60,
       "action": "Pause",
       "image_on": "gui/Pause-on.png",
       "image_off": "gui/Pause-off.png"
     },
     {
-      "x": 10,
-      "y": 60,
-      "width": 50,
-      "height": 50,
-      "action": "Left",
-      "image_on": "gui/Left-on.png",
-      "image_off": "gui/Left-off.png"
-    },
-    {
-      "x": 80,
-      "y": 60,
-      "width": 50,
-      "height": 50,
-      "action": "Right",
-      "image_on": "gui/Right-on.png",
-      "image_off": "gui/Right-off.png"
-    },
-    {
-      "x": 45,
-      "y": 5,
-      "width": 50,
-      "height": 50,
-      "action": "Up",
-      "image_on": "gui/Up-on.png",
-      "image_off": "gui/Up-off.png"
-    },
-    {
-      "x": 45,
-      "y": 95,
-      "width": 50,
-      "height": 50,
+      "x": 50,
+      "y": 120,
+      "width": 60,
+      "height": 60,
       "action": "Down",
       "image_on": "gui/Down-on.png",
       "image_off": "gui/Down-off.png"
     },
     {
-      "x": 45,
-      "y": 150,
-      "width": 50,
-      "height": 50,
+      "x": 0,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "action": "Left",
+      "image_on": "gui/Left-on.png",
+      "image_off": "gui/Left-off.png"
+    },
+    {
+      "x": 100,
+      "y": 60,
+      "width": 60,
+      "height": 60,
+      "action": "Right",
+      "image_on": "gui/Right-on.png",
+      "image_off": "gui/Right-off.png"
+    },
+    {
+      "x": 50,
+      "y": 0,
+      "width": 60,
+      "height": 60,
+      "action": "Up",
+      "image_on": "gui/Up-on.png",
+      "image_off": "gui/Up-off.png"
+    },
+    {
+      "x": 720,
+      "y": 40,
+      "width": 70,
+      "height": 70,
       "action": "Bomba",
       "image_on": "gui/B_1.png",
       "image_off": "gui/B_0.png"

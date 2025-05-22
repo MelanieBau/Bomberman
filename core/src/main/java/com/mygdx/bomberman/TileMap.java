@@ -64,7 +64,7 @@ public class TileMap {
 
 
         //Dibuja el fondo de mi pantalla
-        Texture bgTexture = manager.get("bomberman.png", Texture.class);
+        Texture bgTexture = manager.get("bombermann.png", Texture.class);
 
         // scroll
         int bgWidth = bgTexture.getWidth();

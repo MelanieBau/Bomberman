@@ -25,7 +25,7 @@ public class LoadingScreen implements Screen {
         manager.load("tiles/2.png", Texture.class);
 
         // Imagen de background
-        manager.load("bomberman.png", Texture.class);
+        manager.load("bombermann.png", Texture.class);
 
         // GUI
         manager.load("gui/Button-off.png", Texture.class);
@@ -110,11 +110,11 @@ public class LoadingScreen implements Screen {
 
         // Dibujar barra de carga
         game.shapeRenderer.begin(ShapeRenderer.ShapeType.Filled);
-        game.shapeRenderer.setColor(Color.YELLOW);
+        game.shapeRenderer.setColor(Color.BLUE);
         game.shapeRenderer.rect(90, 200, 620, 100); // Marco exterior
-        game.shapeRenderer.setColor(Color.BLACK);
+        game.shapeRenderer.setColor(Color.PINK);
         game.shapeRenderer.rect(100, 210, 600, 80); // Fondo interno
-        game.shapeRenderer.setColor(Color.ORANGE);
+        game.shapeRenderer.setColor(Color.WHITE);
         game.shapeRenderer.rect(110, 220, 580 * loadProgress, 60); // Progreso
         game.shapeRenderer.end();
 

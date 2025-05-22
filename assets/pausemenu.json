@@ -2,21 +2,21 @@
   "buttons": [
     {
       x: 200
-      y: 110
+      y: 250
       width: 400
       height: 120
       action: Resume
-      "text": "Salir"
+      "text": "Continuar"
       "image_on": "gui/Button-on.png"
       "image_off": "gui/Button-off.png"
     },
     {
       x: 200
-      y: 250
+      y: 110
       width: 400
       height: 120
       action: Quit
-      "text": "Continuar"
+      "text": "Salir"
       "image_on": "gui/Button-on.png"
       "image_off": "gui/Button-off.png"
     }

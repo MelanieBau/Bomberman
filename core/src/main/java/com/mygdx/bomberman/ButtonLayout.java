@@ -161,7 +161,9 @@ public class ButtonLayout implements InputProcessor {
             if(b.text != null) {
                 GlyphLayout glyphLayout = new GlyphLayout();
                 glyphLayout.setText(font, b.text);
-                font.draw(textBatch, glyphLayout, b.rect.x + (b.rect.width - glyphLayout.width) / 2f, 480 - (b.rect.y + (b.rect.height - glyphLayout.height) / 2f));
+                font.draw(textBatch, glyphLayout,
+                    b.rect.x + (b.rect.width - glyphLayout.width) / 2f,
+                    b.rect.y + (b.rect.height + font.getCapHeight()) / 2f);
             }
         }
         textBatch.end();
